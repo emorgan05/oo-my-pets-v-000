@@ -46,11 +46,15 @@ class Owner
   end
 
   def sell_pets
-    self.pets.each do |type, pet|
-      pet.each do |pet|
+    self.pets.each do |type, pet_array|
+      pet_array.each do |pet|
         pet.mood = "nervous"
       end
     end
     self.pets = { :fish => [], :cats => [], :dogs => [] }
+  end
+
+  def list_pets
+    "I have #{self.pets[:fishes].length} fish, #{self.pets[:dogs].length} dog(s), and #{self.pets[:cats].length} cat(s)."
   end
 end
