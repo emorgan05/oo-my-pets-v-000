@@ -3,14 +3,14 @@ class Owner
   attr_reader :species
 
   @@all = []
-  
+
   def initialize(species)
     @species = species
     @name = name
     @pets = {:fishes => [], :cats => [], :dogs => []}
     @@all << self
   end
-  
+
   def say_species
     "I am a #{@species}."
   end
