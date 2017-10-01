@@ -12,9 +12,9 @@ class Owner
   end
 
   def self.all
-    @@all 
+    @@all
   end
-  
+
   def say_species
     "I am a #{@species}."
   end
