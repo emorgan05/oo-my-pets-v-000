@@ -1,4 +1,5 @@
 class Cat
+  attr_accessor :owner
   attr_writer :mood
   attr_reader :name
 
