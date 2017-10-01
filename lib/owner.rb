@@ -49,9 +49,8 @@ class Owner
     self.pets.each do |type, pet|
       pet.each do |pet|
         pet.mood = "nervous"
-        pet.clear
       end
     end
-    # self.pets = { :fish => [], :cats => [], :dogs => [] }
+    self.pets = { :fish => [], :cats => [], :dogs => [] }
   end
 end
