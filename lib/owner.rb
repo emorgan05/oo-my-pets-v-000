@@ -22,7 +22,7 @@ class Owner
   def self.count
     @@all.length
   end
-  
+
   def say_species
     "I am a #{@species}."
   end
